@@ -8,7 +8,6 @@ score = 0
 print(players)
 
 print(f"Player {turnofplayer}'s turn has just started")
-print(f"Your total score is {score}")
 
 while True:
         wouldyouliketoroll = input("Would you like to roll (y/n)")
@@ -18,11 +17,15 @@ while True:
             print(f"You rolled a: {randomnumber}")
             sumofscores = sum(players[turnofplayer-1])
             print(f"Your score is: {sumofscores}")
+            finalscore = sum(players[turnofplayer-1])
             if randomnumber == 1:
                   turnofplayer += 1
                   if turnofplayer > numberofplayers:
-                    break
+                    turnofplayer = 1
                   print(f"Player {turnofplayer}'s turn has just started")
                   print(f"Your total score is {score}")
+            if finalscore >= 100:
+                 print(f"Player {players[turnofplayer-1]} has won the game")
+                 break
         else:
               break
