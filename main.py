@@ -5,6 +5,12 @@ players = [[] for i in range(numberofplayers)]
 turnofplayer = 1
 score = 0
 
+while True:
+    if numberofplayers > 4 or numberofplayers < 2:
+        numberofplayers = int(input("Enter the number of players:"))
+    else:
+        break
+
 print(players)
 
 print(f"Player {turnofplayer}'s turn has just started")
