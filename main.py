@@ -1,8 +1,11 @@
 import random
 
 numberofplayers = int(input("Enter the number of players:"))
-players = []
+players = [[] for i in range(numberofplayers)]
+turnofplayer = 1
+score = 0
 
-for i in range(numberofplayers):
-    players.append(i)
 print(players)
+
+print(f"Player {turnofplayer}'s turn has just started")
+print(f"Your total score is {score}")
