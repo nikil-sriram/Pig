@@ -23,7 +23,7 @@ while True:
                   if turnofplayer > numberofplayers:
                     turnofplayer = 1
                   print(f"Player {turnofplayer}'s turn has just started")
-                  print(f"Your total score is {score}")
+                  print(f"Your total score is {sum(players[turnofplayer-1])}")
             if finalscore >= 50:
                  print(f"Player {turnofplayer} has won the game")
                  break
