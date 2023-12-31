@@ -24,8 +24,8 @@ while True:
                     turnofplayer = 1
                   print(f"Player {turnofplayer}'s turn has just started")
                   print(f"Your total score is {score}")
-            if finalscore >= 100:
-                 print(f"Player {players[turnofplayer-1]} has won the game")
+            if finalscore >= 50:
+                 print(f"Player {turnofplayer} has won the game")
                  break
         else:
               break
