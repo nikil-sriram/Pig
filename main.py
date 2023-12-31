@@ -19,6 +19,10 @@ while True:
             sumofscores = sum(players[turnofplayer-1])
             print(f"Your score is: {sumofscores}")
             if randomnumber == 1:
-                  break
+                  turnofplayer += 1
+                  if turnofplayer > numberofplayers:
+                    break
+                  print(f"Player {turnofplayer}'s turn has just started")
+                  print(f"Your total score is {score}")
         else:
               break
